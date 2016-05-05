@@ -60,15 +60,74 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\animate.min.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\lightbox.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\presets\preset1.css" />
+    <Content Include="css\presets\preset2.css" />
+    <Content Include="css\presets\preset3.css" />
+    <Content Include="css\presets\preset4.css" />
+    <Content Include="css\presets\preset5.css" />
+    <Content Include="css\presets\preset6.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Home.aspx" />
+    <Content Include="images\10K.png" />
+    <Content Include="images\about-bg.jpg" />
+    <Content Include="images\blog\1.jpg" />
+    <Content Include="images\blog\2.jpg" />
+    <Content Include="images\blog\3.jpg" />
+    <Content Include="images\contact-bg.jpg" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\features-bg.jpg" />
+    <Content Include="images\lightbox\close.png" />
+    <Content Include="images\lightbox\loading.gif" />
+    <Content Include="images\lightbox\next.png" />
+    <Content Include="images\lightbox\prev.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\portfolio\1.jpg" />
+    <Content Include="images\portfolio\2.jpg" />
+    <Content Include="images\portfolio\3.jpg" />
+    <Content Include="images\portfolio\4.jpg" />
+    <Content Include="images\portfolio\5.jpg" />
+    <Content Include="images\portfolio\6.jpg" />
+    <Content Include="images\portfolio\7.jpg" />
+    <Content Include="images\portfolio\8.jpg" />
+    <Content Include="images\portfolio\portfolio-details.jpg" />
+    <Content Include="images\slider\1.jpg" />
+    <Content Include="images\slider\2.jpg" />
+    <Content Include="images\slider\3.jpg" />
+    <Content Include="images\team\1.jpg" />
+    <Content Include="images\team\2.jpg" />
+    <Content Include="images\team\3.jpg" />
+    <Content Include="images\team\4.jpg" />
+    <Content Include="images\team\5.jpg" />
+    <Content Include="images\twitter-bg.jpg" />
     <Content Include="img\connectivity.jpg" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="img\GlobalReach.jpg" />
+    <Content Include="img\logo.png" />
+    <Content Include="js\html5shiv.js" />
+    <Content Include="js\jquery.countTo.js" />
+    <Content Include="js\jquery.inview.min.js" />
+    <Content Include="js\lightbox.min.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\mousescroll.js" />
+    <Content Include="js\respond.min.js" />
+    <Content Include="js\smoothscroll.js" />
+    <Content Include="js\wow.min.js" />
     <Content Include="Member.aspx" />
     <Content Include="orange juice 2.0.ttf" />
     <Content Include="packages.config" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -93,6 +152,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -116,6 +182,7 @@
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
