@@ -23,7 +23,8 @@
   <![endif]-->
   
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="shortcut icon" href="images/10K.png">
+    
 </head>
     <!--/head-->
 
@@ -39,22 +40,22 @@
       <div class="carousel-inner">
         <div class="item active" style="background-image: url(images/slider/1.jpg)">
           <div class="caption">
-            <h1 class="animated fadeInLeftBig">Welcome to <span>The 10k Network</span></h1>
-            <p class="animated fadeInRightBig">Web Development - Mobile App Development - Desktop Applications - Game Development</p>
+            <h1 class="animated fadeInLeftBig">JOIN US TO DEVELOP <span>OPEN SOURCE</span> APPS</h1>
+            <p class="animated fadeInRightBig">App Development - Game Development - Web Applications - Database Development</p>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
           </div>
         </div>
         <div class="item" style="background-image: url(images/slider/2.jpg)">
           <div class="caption">
-            <h1 class="animated fadeInLeftBig">Say Hello to <span>A New Community</span></h1>
-            <p class="animated fadeInRightBig">Web Development - Mobile App Development - Desktop Applications - Game Development</p>
+            <h1 class="animated fadeInLeftBig">LEARN <span>SOFTWARE DEVELOPMENT</span> HANDS ON</h1>
+            <p class="animated fadeInRightBig">App Development - Game Development - Web Applications - Database Development</p>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
           </div>
         </div>
         <div class="item" style="background-image: url(images/slider/3.jpg)">
           <div class="caption">
-            <h1 class="animated fadeInLeftBig">We are <span>Creative</span></h1>
-            <p class="animated fadeInRightBig">Bootstrap - Responsive Design - Retina Ready - Parallax</p>
+            <h1 class="animated fadeInLeftBig">BECOME AN <span>ASSOCIATE</span> TODAY!</h1>
+            <p class="animated fadeInRightBig">App Development - Game Development - Web Applications - Database Development</p>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
           </div>
         </div>
@@ -81,10 +82,11 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
             <li class="scroll active"><a href="#home">Home</a></li>
-            <li class="scroll"><a href="#services">Service</a></li> 
+            <li class="scroll"><a href="#services">Projects</a></li> 
             <li class="scroll"><a href="#about-us">About Us</a></li>                     
-            <li class="scroll"><a href="#portfolio">Portfolio</a></li>
-            <li class="scroll"><a href="#team">Team</a></li>
+            <%--<li class="scroll"><a href="#portfolio">Portfolio</a></li>--%>            
+            <li class="scroll"><a href="#team">Leaders</a></li>
+              <li class="scroll"><a href="#pricing">Pricing</a></li>
             <li class="scroll"><a href="#blog">Blog</a></li>
             <li class="scroll"><a href="#contact">Contact</a></li>       
           </ul>
@@ -97,7 +99,7 @@
       <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
         <div class="row">
           <div class="text-center col-sm-8 col-sm-offset-2">
-            <h2>Our Services</h2>
+            <h2>Our Projects</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
           </div>
         </div> 
@@ -106,47 +108,47 @@
         <div class="row">
           <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
             <div class="service-icon">
-              <i class="fa fa-flask"></i>
+              <i class="fa fa-mobile-phone"></i>
             </div>
             <div class="service-info">
-              <h3>Brand Identity</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+              <h3>APP DEVELOPMENT</h3>
+              <p>Join us to develop Open Source Apps</p>
             </div>
           </div>
           <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms">
             <div class="service-icon">
-              <i class="fa fa-umbrella"></i>
+              <i class="fa fa-gamepad"></i>
             </div>
             <div class="service-info">
-              <h3>Creative Idea</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+              <h3>GAME DEVELOPMENT</h3>
+              <p>Join any of our Open Source Teams to develop Cross Platform Games</p>
             </div>
           </div>
           <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="550ms">
             <div class="service-icon">
-              <i class="fa fa-cloud"></i>
+              <i class="fa fa-html5"></i>
             </div>
             <div class="service-info">
-              <h3>Awesome Support</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+              <h3>WEB DEVELOPMENT</h3>
+              <p>Join any of our Open Source Teams to develop Web Applications using the latest Web standards</p>
             </div>
           </div>
           <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="650ms">
             <div class="service-icon">
-              <i class="fa fa-coffee"></i>
+              <i class="fa fa-database"></i>
             </div>
             <div class="service-info">
-              <h3>Professional Design</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+              <h3>DATABASE DEVLOPMENT</h3>
+              <p>Join any of our Open Source Teams to design and develop Database Systems</p>
             </div>
           </div>
           <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="750ms">
             <div class="service-icon">
-              <i class="fa fa-bitbucket"></i>
+              <i class="fa fa-map-marker"></i>
             </div>
             <div class="service-info">
-              <h3>App Development</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+              <h3>GIS DEVELOPMENT</h3>
+              <p>Join any of our Open Source Teams to develop Geographic Information Systems</p>
             </div>
           </div>
           <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
@@ -168,8 +170,9 @@
         <div class="col-sm-6">
           <div class="about-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
             <h2>About us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.Ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>The 10K Network is a network of IT professionals from all programming language backgrounds.</p> 
+            <p>These professionals collaborate in real time on projectssuch as mobile applications, desktop applications, game applications and web applications alike. </p>
+            <p>Whether you are a beginner or a pro you are welcome to join us!</p>
           </div>
         </div>
         <div class="col-sm-6">
@@ -204,7 +207,7 @@
     </div>
   </section><!--/#about-us-->
 
-  <section id="portfolio">
+  <%--<section id="portfolio">
     <div class="container">
       <div class="row">
         <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -389,13 +392,13 @@
       <div id="portfolio-single">
       </div>
     </div><!-- /#portfolio-single-wrap -->
-  </section><!--/#portfolio-->
+  </section><!--/#portfolio-->--%>
 
   <section id="team">
     <div class="container">
       <div class="row">
         <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-          <h2>The Team</h2>
+          <h2>Leaders</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
         </div>
       </div>
@@ -407,9 +410,9 @@
                 <img class="img-responsive" src="images/team/1.jpg" alt="">
               </div>
               <div class="member-info">
-                <h3>Marian Dixon</h3>
-                <h4>CEO &amp; Founder</h4>
-                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                <h3>Kojo Sam-Woode</h3>
+                <h4>Fellow/Co-Founder</h4>
+                <%--<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>--%>
               </div>
               <div class="social-icons">
                 <ul>
@@ -428,9 +431,9 @@
                 <img class="img-responsive" src="images/team/2.jpg" alt="">
               </div>
               <div class="member-info">
-                <h3>Lawrence Lane</h3>
-                <h4>UI/UX Designer</h4>
-                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                <h3>Prince Boadu</h3>
+                <h4>Fellow/Co-Founder</h4>
+                <%--<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>--%>
               </div>
               <div class="social-icons">
                 <ul>
@@ -449,9 +452,9 @@
                 <img class="img-responsive" src="images/team/3.jpg" alt="">
               </div>
               <div class="member-info">
-                <h3>Lois Clark</h3>
-                <h4>Developer</h4>
-                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                <h3>Stylish Amankwah</h3>
+                <h4>Fellow/Co-Founder</h4>
+                <%--<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>--%>
               </div>
               <div class="social-icons">
                 <ul>
@@ -471,8 +474,8 @@
               </div>
               <div class="member-info">
                 <h3>Emmanuel Hutchful</h3>
-                <h4>Developer</h4>
-                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                <h4>Member</h4>
+                <%--<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>--%>
               </div>
               <div class="social-icons">
                 <ul>
@@ -521,7 +524,7 @@
     <div class="container">
       <div class="row">
         <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-          <h2>Pricing Table</h2>
+          <h2>Subscription Fees</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
         </div>
       </div>
@@ -529,9 +532,9 @@
         <div class="row">
           <div class="col-sm-3">
             <div class="single-table wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
-              <h3>Basic</h3>
+              <h3>Associates</h3>
               <div class="price">
-                $9<span>/Month</span>                          
+                FREE<span>/Month</span>                          
               </div>
               <ul>
                 <li>Free Setup</li>
@@ -544,9 +547,9 @@
           </div>
           <div class="col-sm-3">
             <div class="single-table wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms">
-              <h3>Standard</h3>
+              <h3>Members</h3>
               <div class="price">
-                $19<span>/Month</span>                                
+                5 GHS<span>/Month</span>                                
               </div>
               <ul>
                 <li>Free Setup</li>
@@ -559,13 +562,13 @@
           </div>
           <div class="col-sm-3">
             <div class="single-table featured wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
-              <h3>Featured</h3>
+              <h3>Fellows</h3>
               <div class="price">
-                $29<span>/Month</span>                                
+                10 GHS<span>/Month</span>                                
               </div>
               <ul>
-                <li>Free Setup</li>
-                <li>10GB Storage</li>
+                <li>Based on Approval</li>
+                <li>Must already be a Member</li>
                 <li>100GB Bandwith</li>
                 <li>5 Products</li>
               </ul>
