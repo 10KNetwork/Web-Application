@@ -42,21 +42,21 @@
           <div class="caption">
             <h1 class="animated fadeInLeftBig">JOIN US TO DEVELOP <span>OPEN SOURCE</span> APPS</h1>
             <p class="animated fadeInRightBig">App Development - Game Development - Web Applications - Database Development</p>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="Register.aspx">JOIN US</a>
           </div>
         </div>
         <div class="item" style="background-image: url(images/slider/2.jpg)">
           <div class="caption">
             <h1 class="animated fadeInLeftBig">LEARN <span>SOFTWARE DEVELOPMENT</span> HANDS ON</h1>
             <p class="animated fadeInRightBig">App Development - Game Development - Web Applications - Database Development</p>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="Register.aspx">JOIN US</a>
           </div>
         </div>
         <div class="item" style="background-image: url(images/slider/3.jpg)">
           <div class="caption">
             <h1 class="animated fadeInLeftBig">BECOME AN <span>ASSOCIATE</span> TODAY!</h1>
             <p class="animated fadeInRightBig">App Development - Game Development - Web Applications - Database Development</p>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="Register.aspx">JOIN US</a>
           </div>
         </div>
       </div>
@@ -75,7 +75,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="Home.aspx">
             <h1><img class="img-responsive" src="images/logo.png" alt="logo"></h1>
           </a>                    
         </div>
@@ -87,7 +87,7 @@
             <%--<li class="scroll"><a href="#portfolio">Portfolio</a></li>--%>            
             <li class="scroll"><a href="#team">Leaders</a></li>
               <li class="scroll"><a href="#pricing">Pricing</a></li>
-            <li class="scroll"><a href="#blog">Blog</a></li>
+            <%--<li class="scroll"><a href="#blog">Blog</a></li>--%>
             <li class="scroll"><a href="#contact">Contact</a></li>       
           </ul>
         </div>
@@ -480,7 +480,7 @@
               <div class="social-icons">
                 <ul>
                   <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="twitter" href="https://twitter.com/ladynay_459"><i class="fa fa-twitter"></i></a></li>
                   <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
                   <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
                   <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
@@ -497,24 +497,24 @@
     <div class="container">
       <div class="row count">
         <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-          <i class="fa fa-user"></i>
-          <h3 class="timer">4000</h3>
-          <p>Happy Clients</p>
+          <i class="fa fa-users"></i>
+          <h3 class="timer">300</h3>
+          <p>Members</p>
         </div>
         <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
-          <i class="fa fa-desktop"></i>
-          <h3 class="timer">200</h3>                    
-          <p>Modern Websites</p>
+          <i class="fa fa-sitemap"></i>
+          <h3 class="timer">20</h3>                    
+          <p>Projects</p>
         </div> 
         <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="700ms">
-          <i class="fa fa-trophy"></i>
+          <i class="fa fa-user"></i>
           <h3 class="timer">10</h3>                    
-          <p>WINNING AWARDS</p>
+          <p>Supervisors</p>
         </div> 
         <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="900ms">
-          <i class="fa fa-comment-o"></i>                    
-          <h3>24/7</h3>
-          <p>Fast Support</p>
+          <i class="fa fa-users"></i>                    
+          <h3>15</h3>
+          <p>Teams</p>
         </div>                 
       </div>
     </div>
@@ -538,7 +538,7 @@
               </div>
               <ul>
                 <li>Free Setup</li>
-                <li>10GB Storage</li>
+                <li>Join any Project</li>
                 <li>100GB Bandwith</li>
                 <li>5 Products</li>
               </ul>
@@ -552,9 +552,9 @@
                 5 GHS<span>/Month</span>                                
               </div>
               <ul>
-                <li>Free Setup</li>
-                <li>10GB Storage</li>
-                <li>100GB Bandwith</li>
+                <li>Subsidized Software Training</li>
+                <li>Personal Mentor</li>
+                <li>Commercial Projects</li>
                 <li>5 Products</li>
               </ul>
               <a href="#" class="btn btn-lg btn-primary">Sign up</a>
@@ -567,9 +567,9 @@
                 10 GHS<span>/Month</span>                                
               </div>
               <ul>
-                <li>Based on Approval</li>
+                <li>Free Software Training</li>
                 <li>Must already be a Member</li>
-                <li>100GB Bandwith</li>
+                <li>Based on Approval</li>
                 <li>5 Products</li>
               </ul>
               <a href="#" class="btn btn-lg btn-primary">Sign up</a>
@@ -625,7 +625,7 @@
     </div>
   </section><!--/#twitter-->
 
-  <section id="blog">
+  <%--<section id="blog">
     <div class="container">
       <div class="row">
         <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
@@ -720,7 +720,7 @@
         </div>                
       </div>
     </div>
-  </section><!--/#blog-->
+  </section><!--/#blog-->--%>
 
   <section id="contact">
     <div id="google-map" class="wow fadeIn" data-latitude="52.365629" data-longitude="4.871331" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
