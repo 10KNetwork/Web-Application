@@ -142,7 +142,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <asp:TextBox ID="Email" runat="server" placeholder="Email Address"></asp:TextBox>
+                        <asp:TextBox ID="Email" runat="server" placeholder="Email Address" TextMode="Email"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
