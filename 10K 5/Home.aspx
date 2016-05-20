@@ -604,7 +604,7 @@
           <div class="col-sm-8 col-sm-offset-2">
             <div class="twitter-icon text-center">
               <i class="fa fa-twitter"></i>
-              <h4>Themeum</h4>
+              <h4>10K Network</h4>
             </div>
             <div id="twitter-carousel" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">

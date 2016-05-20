@@ -149,6 +149,7 @@
     <Content Include="img\pic14.jpg" />
     <Content Include="Register.aspx" />
     <Content Include="img\reliant.jpg" />
+    <Content Include="TryMail.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -180,6 +181,13 @@
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TryMail.aspx.cs">
+      <DependentUpon>TryMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TryMail.aspx.designer.cs">
+      <DependentUpon>TryMail.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
