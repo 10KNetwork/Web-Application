@@ -5,8 +5,6 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10K 5", "10K 5\10K 5.csproj", "{20FE6E0C-0785-4F0C-95A0-53154631DE70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailAuth", "..\EmailAuth\EmailAuth\EmailAuth.csproj", "{D9FC1811-42F5-4213-9DBD-0EAD51F15FF6}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,10 +16,6 @@ Global
 		{20FE6E0C-0785-4F0C-95A0-53154631DE70}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{20FE6E0C-0785-4F0C-95A0-53154631DE70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20FE6E0C-0785-4F0C-95A0-53154631DE70}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D9FC1811-42F5-4213-9DBD-0EAD51F15FF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D9FC1811-42F5-4213-9DBD-0EAD51F15FF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D9FC1811-42F5-4213-9DBD-0EAD51F15FF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D9FC1811-42F5-4213-9DBD-0EAD51F15FF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
