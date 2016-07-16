@@ -40,7 +40,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="MPowerPayments">
-      <HintPath>..\..\..\..\Desktop\mpower_dotnet_latest\Release\MPowerPayments.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Compressed\mpower_dotnet_latest\Release\MPowerPayments.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
