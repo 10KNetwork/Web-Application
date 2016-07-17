@@ -10,7 +10,7 @@ namespace _10K_5
 {
     public partial class eTransact : System.Web.UI.Page
     {
-        MPowerSetup setup = new MPowerSetup()
+        static MPowerSetup setup = new MPowerSetup()
         {
             MasterKey = "dd6f2c90-f075-012f-5b69-00155d864600",
             PrivateKey = "test_private_oDLVlm1eNyh0IsetdhdJvcl0ygA",
@@ -19,7 +19,7 @@ namespace _10K_5
             Mode = "test"
         };
 
-        MPowerStore store = new MPowerStore()
+        static MPowerStore store = new MPowerStore()
         {
             Name = "10KNetwork Store",
             Tagline = "This is my awesome tagline",
@@ -36,14 +36,12 @@ namespace _10K_5
         // If you intend to use a simpler approach by redirecting to the MPower checkout page
         // Please note that the constructor requires a instance of both
         // MPowerSetup & MPowerStore Classes respectively
-        MPowerCheckoutInvoice invoice = new MPowerCheckoutInvoice(setup, store)
-    {
-       MPowerstore.Name = "10K Network"
-    };
+        MPowerCheckoutInvoice invoice = new MPowerCheckoutInvoice(setup, store);
+   
 
         // If you wish to accept payments directly on your service
         // Please note that the constructor requires a instance of both
         // MPowerSetup & MPowerStore Classes respectively
-        MPowerOnsiteInvoice invoice = new MPowerOnsiteInvoice(setup, store);
+        MPowerOnsiteInvoice invoice_1 = new MPowerOnsiteInvoice(setup, store);
     }
 }

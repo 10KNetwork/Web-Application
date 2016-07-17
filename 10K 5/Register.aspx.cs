@@ -110,5 +110,10 @@ string Email_Subject)
             //}
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("eTransact.aspx");
+        }
     }                       
 }

@@ -68,6 +68,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="10.aspx" />
+    <Content Include="css\10.css" />
     <Content Include="css\animate.min.css" />
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\lightbox.css" />
@@ -120,6 +122,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="img\GlobalReach.jpg" />
     <Content Include="img\logo.png" />
+    <Content Include="js\10.js" />
     <Content Include="js\html5shiv.js" />
     <Content Include="js\jquery.countTo.js" />
     <Content Include="js\jquery.inview.min.js" />
@@ -160,6 +163,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="10.aspx.cs">
+      <DependentUpon>10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="10.aspx.designer.cs">
+      <DependentUpon>10.aspx</DependentUpon>
+    </Compile>
     <Compile Include="eTransact.aspx.cs">
       <DependentUpon>eTransact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

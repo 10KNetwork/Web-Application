@@ -79,6 +79,19 @@
             margin-bottom:5px;
             width:100%
         }
+
+        .navbar{
+            background-color:#028fcc;          
+        }
+        
+        .navbar .page-scroll{
+            color:white
+        }
+
+        .nav-justified{
+            background-color: #c1bdba;
+            padding:50px
+        }
     </style>
 </head>
 <body>
@@ -94,7 +107,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="Main.aspx">The 10K Network</a>
+                <a class="navbar-brand page-scroll" href="Home.aspx">The 10K Network</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -182,7 +195,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Button ID="Pay" runat="server" Text="PROCEED TO PAY" OnClick="Button1_Click" />
+                    </td>
                 </tr>
                 <tr>
                     <td>
