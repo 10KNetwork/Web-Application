@@ -60,7 +60,7 @@ namespace _10K_5
         eWallet.Text = invoice.ResponseText;
         string url = "";
           url  = invoice.GetInvoiceUrl();                     
-         //  Response.Redirect(url,true);
+           Response.Redirect(url,true);
 
 
         }
