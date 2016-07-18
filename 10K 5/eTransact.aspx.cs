@@ -57,8 +57,8 @@ namespace _10K_5
         invoice.SetTotalAmount(23);
 
         invoice.Create();
-                                            
-           Response.Redirect(invoice.GetInvoiceUrl);
+        string url = "invoice.GetInvoiceUrl";                           
+           Response.Redirect(url,true);
 
 
         }
