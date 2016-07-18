@@ -39,9 +39,9 @@ namespace _10K_5
         // Please note that the constructor requires a instance of both
         // MPowerSetup & MPowerStore Classes respectively
         MPowerCheckoutInvoice invoice = new MPowerCheckoutInvoice(setup, store);
+        // If you wish to accept payments directly on your serviceetup, store);
    
 
-        // If you wish to accept payments directly on your service
         // Please note that the constructor requires a instance of both
         // MPowerSetup & MPowerStore Classes respectively
         MPowerOnsiteInvoice invoice_1 = new MPowerOnsiteInvoice(setup, store);
@@ -53,12 +53,14 @@ namespace _10K_5
       
 
 
-        invoice.AddItem("Gold", 1, 4.5, 3.4);
-        invoice.SetTotalAmount(23);
+        invoice.AddItem("Gold", 1, 4.5, 4.5);
+        invoice.SetTotalAmount(4.5);
 
         invoice.Create();
-        string url = "invoice.GetInvoiceUrl";                           
-           Response.Redirect(url,true);
+        eWallet.Text = invoice.ResponseText;
+        string url = "";
+          url  = invoice.GetInvoiceUrl();                     
+         //  Response.Redirect(url,true);
 
 
         }
