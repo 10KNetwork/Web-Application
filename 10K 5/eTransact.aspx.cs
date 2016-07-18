@@ -23,8 +23,8 @@ namespace _10K_5
 
         static MPowerStore store = new MPowerStore()
         {
-            Name = "10KNetwork Store",
-            Tagline = "This is my awesome tagline",
+            Name = "The 10KNetwork",
+            Tagline = "Awesome Community of Developers",
             PhoneNumber = "030200001",
             PostalAddress = "P. O. Box 10770 Accra North Ghana",
             LogoUrl = "http://www.mylogourl.com/photo.png"
