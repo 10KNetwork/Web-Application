@@ -33,7 +33,7 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="eWallet" runat="server" Text="Pay with MPower" />
+                    <asp:Button ID="eWallet" runat="server" Text="Pay with MPower" OnClick="eWallet_Click" />
                 </td>
             </tr>
             <tr>

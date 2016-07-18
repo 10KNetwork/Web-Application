@@ -8,6 +8,8 @@ using MPowerPayments;
 
 namespace _10K_5
 {
+
+
     public partial class eTransact : System.Web.UI.Page
     {
         static MPowerSetup setup = new MPowerSetup()
@@ -43,5 +45,22 @@ namespace _10K_5
         // Please note that the constructor requires a instance of both
         // MPowerSetup & MPowerStore Classes respectively
         MPowerOnsiteInvoice invoice_1 = new MPowerOnsiteInvoice(setup, store);
+
+        protected void eWallet_Click(object sender, EventArgs e)
+        {
+            MPowerCheckoutInvoice invoice = new MPowerCheckoutInvoice(setup, store);
+     store.Name = "freeuapp.com";
+      
+
+
+        invoice.AddItem("Gold", 1, 4.5, 3.4);
+        invoice.SetTotalAmount(23);
+
+        invoice.Create();
+                                            
+           Response.Redirect(invoice.GetInvoiceUrl);
+
+
+        }
     }
 }
