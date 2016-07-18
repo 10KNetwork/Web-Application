@@ -14,10 +14,10 @@ namespace _10K_5
     {
         static MPowerSetup setup = new MPowerSetup()
         {
-            MasterKey = "dd6f2c90-f075-012f-5b69-00155d864600",
-            PrivateKey = "test_private_oDLVlm1eNyh0IsetdhdJvcl0ygA",
-            PublicKey = "test_public_zzF3ywvX9DE-OSDNhUqKoaTI4wc",
-            Token = "ca03737cf942cf644f36",
+            MasterKey = "7d1c3b69-5372-44ac-b087-0af9960e7f42",
+            PrivateKey = "test_private_mOCDCuHUK81hEzLVYGQCgWt_Ym8",
+            PublicKey = "test_public_rZTueij37uQ9xoNYs_1qhpD9SWI",
+            Token = "07d707c3ddb1038b910e",
             Mode = "test"
         };
 
