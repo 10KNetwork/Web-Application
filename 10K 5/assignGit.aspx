@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="assignGit.aspx.cs" Inherits="_10K_5.assignGit" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="assignGit.aspx.cs" Inherits="_10K_5.assignGit" UnobtrusiveValidationMode=None Async="true" %>
 
 <!DOCTYPE html>
 
@@ -11,7 +11,8 @@
     <div>
     
         <asp:TextBox ID="GitAcc" runat="server"></asp:TextBox>
-        <asp:Button ID="GitAssign" runat="server" Text="Assign" />
+        <asp:Button ID="GitAssign" runat="server" Text="Assign" OnClick="GitAssign_Click" />
+        
     
     </div>
     </form>
