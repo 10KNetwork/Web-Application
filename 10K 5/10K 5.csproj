@@ -82,6 +82,7 @@
     <Content Include="css\presets\preset5.css" />
     <Content Include="css\presets\preset6.css" />
     <Content Include="css\responsive.css" />
+    <Content Include="eReceipt.aspx" />
     <Content Include="eTransact.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Home.aspx" />
@@ -177,6 +178,13 @@
     </Compile>
     <Compile Include="assignGit.aspx.designer.cs">
       <DependentUpon>assignGit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eReceipt.aspx.cs">
+      <DependentUpon>eReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eReceipt.aspx.designer.cs">
+      <DependentUpon>eReceipt.aspx</DependentUpon>
     </Compile>
     <Compile Include="eTransact.aspx.cs">
       <DependentUpon>eTransact.aspx</DependentUpon>

@@ -33,14 +33,14 @@ namespace _10K_5
         {
 
         }
-           
+
 
         // If you intend to use a simpler approach by redirecting to the MPower checkout page
         // Please note that the constructor requires a instance of both
         // MPowerSetup & MPowerStore Classes respectively
         MPowerCheckoutInvoice invoice = new MPowerCheckoutInvoice(setup, store);
         // If you wish to accept payments directly on your serviceetup, store);
-   
+
 
         // Please note that the constructor requires a instance of both
         // MPowerSetup & MPowerStore Classes respectively
@@ -49,20 +49,54 @@ namespace _10K_5
         protected void eWallet_Click(object sender, EventArgs e)
         {
             MPowerCheckoutInvoice invoice = new MPowerCheckoutInvoice(setup, store);
-     store.Name = "freeuapp.com";
-      
+            store.Name = "The 10KNetwork";
 
 
-        invoice.AddItem("Gold", 1, 4.5, 4.5);
-        invoice.SetTotalAmount(4.5);
 
-        invoice.Create();
-        eWallet.Text = invoice.ResponseText;
-        string url = "";
-          url  = invoice.GetInvoiceUrl();                     
-           Response.Redirect(url,true);
+            invoice.AddItem("Gold", 1, 4.5, 4.5);
+            invoice.SetTotalAmount(4.5);
+
+            invoice.Create();
+            eWallet.Text = invoice.ResponseText;
+            string url = "";
+            url = invoice.GetInvoiceUrl();
+            Response.Redirect(url, true);
+
+            if (invoice_1.Create("MPOWER_CUSTOMER_USERNAME_OR_PHONENO"))
+            {
+                Response.Write(invoice_1.Token);
+                Response.Write(invoice_1.Status);
+                Response.Write(invoice_1.ResponseText);
+            }
+            else
+            {
+                Response.Write(invoice_1.ResponseText);
+                Response.Write(invoice_1.Status);
+            };
 
 
+            if (invoice_1.Charge("OPR_TOKEN", "CUSTOMER_CONFIRM_TOKEN"))
+            {
+                Response.Write(invoice_1.Status);
+                Response.Write(invoice_1.ResponseText);
+                Response.Write(invoice_1.GetReceiptUrl());
+                Response.Write(invoice_1.GetCustomerInfo("name"));
+                Response.Write(invoice_1.GetCustomerInfo("email"));
+                invoice.GetReceiptUrl();
+                string url_1 = "";
+                url_1 = invoice_1.GetReceiptUrl();
+                Response.Redirect(url_1, true);
+            }
+
+            else
+            {
+                Response.Write(invoice.Status);
+                Response.Write(invoice.ResponseText);
+            }
+
+            {
+
+            }
         }
     }
 }

@@ -13,8 +13,7 @@
         .center{
             width:200px;
             margin:auto;
-            font-family:'Segoe UI';
-            border
+            font-family:'Segoe UI';           
         }
     </style>
 </head>
