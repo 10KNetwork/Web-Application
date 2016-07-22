@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="10.aspx" />
+    <Content Include="10K Channel.aspx" />
     <Content Include="assignGit.aspx" />
     <Content Include="css\10.css" />
     <Content Include="css\animate.min.css" />
@@ -177,6 +178,13 @@
     </Compile>
     <Compile Include="10.aspx.designer.cs">
       <DependentUpon>10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="10K Channel.aspx.cs">
+      <DependentUpon>10K Channel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="10K Channel.aspx.designer.cs">
+      <DependentUpon>10K Channel.aspx</DependentUpon>
     </Compile>
     <Compile Include="assignGit.aspx.cs">
       <DependentUpon>assignGit.aspx</DependentUpon>
