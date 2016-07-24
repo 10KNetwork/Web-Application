@@ -40,7 +40,7 @@
       <div class="carousel-inner">
         <div class="item active" style="background-image: url(images/slider/1.jpg)">
           <div class="caption">
-            <h1 class="animated fadeInLeftBig">JOIN US TO DEVELOP <span>OPEN SOURCE</span> APPS</h1>
+            <h1 class="animated fadeInLeftBig">JOIN US DEVELOP <span>OPEN SOURCE</span> APPS</h1>
             <p class="animated fadeInRightBig">App Development - Game Development - Web Applications - Database Development</p>
             <a data-scroll class="btn btn-start animated fadeInUpBig" href="Register.aspx">JOIN US</a>
           </div>
@@ -542,7 +542,7 @@
                 <li>100GB Bandwith</li>
                 <li>5 Products</li>
               </ul>
-              <a href="#" class="btn btn-lg btn-primary">Sign up</a>
+              <a href="Register.aspx" class="btn btn-lg btn-primary">Sign up</a>
             </div>
           </div>
           <div class="col-sm-3">
@@ -557,7 +557,7 @@
                 <li>Commercial Projects</li>
                 <li>5 Products</li>
               </ul>
-              <a href="#" class="btn btn-lg btn-primary">Sign up</a>
+              <a href="Register.aspx" class="btn btn-lg btn-primary">Sign up</a>
             </div>
           </div>
           <div class="col-sm-3">
@@ -572,10 +572,10 @@
                 <li>Based on Approval</li>
                 <li>5 Products</li>
               </ul>
-              <a href="#" class="btn btn-lg btn-primary">Sign up</a>
+              <a href="Register.aspx" class="btn btn-lg btn-primary">Sign up</a>
             </div>
           </div>
-          <div class="col-sm-3">
+          <%--<div class="col-sm-3">
             <div class="single-table wow flipInY" data-wow-duration="1000ms" data-wow-delay="1100ms">
               <h3>Professional</h3>
               <div class="price">
@@ -589,7 +589,7 @@
               </ul>
               <a href="#" class="btn btn-lg btn-primary">Sign up</a>
             </div>
-          </div>
+          </div>--%>
         </div>
       </div>
     </div>

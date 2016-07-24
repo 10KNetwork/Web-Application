@@ -59,42 +59,57 @@ namespace _10K_5
             invoice.Create();
             eWallet.Text = invoice.ResponseText;
             string url = "";
+             string url1 = "";
             url = invoice.GetInvoiceUrl();
+             url1 = invoice.GetReceiptUrl();
+
+
             Response.Redirect(url, true);
 
-            if (invoice_1.Create("MPOWER_CUSTOMER_USERNAME_OR_PHONENO"))
+            if (url1 != "")
             {
-                Response.Write(invoice_1.Token);
-                Response.Write(invoice_1.Status);
-                Response.Write(invoice_1.ResponseText);
+                Response.Redirect(url1, true);
+
             }
-            else
-            {
-                Response.Write(invoice_1.ResponseText);
-                Response.Write(invoice_1.Status);
-            };
+       
 
 
-            if (invoice_1.Charge("OPR_TOKEN", "CUSTOMER_CONFIRM_TOKEN"))
-            {
-                Response.Write(invoice_1.Status);
-                Response.Write(invoice_1.ResponseText);
-                Response.Write(invoice_1.GetReceiptUrl());
-                Response.Write(invoice_1.GetCustomerInfo("name"));
-                Response.Write(invoice_1.GetCustomerInfo("email"));
-                invoice.GetReceiptUrl();
-                string url_1 = "";
-                url_1 = invoice_1.GetReceiptUrl();
-                Response.Redirect(url_1, true);
-            }
 
-            else
-            {
-                Response.Write(invoice.Status);
-                Response.Write(invoice.ResponseText);
-            }
 
-            {
+
+            //if (invoice_1.Create("MPOWER_CUSTOMER_USERNAME_OR_PHONENO"))
+            //{
+            //    Response.Write(invoice_1.Token);
+            //    Response.Write(invoice_1.Status);
+            //    Response.Write(invoice_1.ResponseText);
+            //}
+            //else
+            //{
+            //    Response.Write(invoice_1.ResponseText);
+            //    Response.Write(invoice_1.Status);
+            //};
+
+
+            //if (invoice_1.Charge("OPR_TOKEN", "CUSTOMER_CONFIRM_TOKEN"))
+            //{
+            //    Response.Write(invoice_1.Status);
+            //    Response.Write(invoice_1.ResponseText);
+            //    Response.Write(invoice_1.GetReceiptUrl());
+            //    Response.Write(invoice_1.GetCustomerInfo("name"));
+            //    Response.Write(invoice_1.GetCustomerInfo("email"));
+            //    invoice.GetReceiptUrl();
+            //    string url_1 = "";
+            //    url_1 = invoice_1.GetReceiptUrl();
+            //    Response.Redirect(url_1, true);
+            //}
+
+            //else
+            //{
+            //    Response.Write(invoice.Status);
+            //    Response.Write(invoice.ResponseText);
+            //}
+
+            //{
 
             }
         }
