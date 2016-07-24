@@ -19,7 +19,7 @@ namespace _10K_5
 
         protected async void GitAssign_Click(object sender, EventArgs e)
         {
-            const string token="";
+            const string token= "4ea6a15c09934f92f71595c3caaa900ef49aba43";
             var github = new GitHubClient(new ProductHeaderValue("10kNetwork"),
                 new InMemoryCredentialStore(new Credentials(token)));
             var member = await github.Organization.Team.AddMembership(id: 2078322, login: GitAcc.Text);
