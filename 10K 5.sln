@@ -1,13 +1,64 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10K 5", "10K 5\10K 5.csproj", "{20FE6E0C-0785-4F0C-95A0-53154631DE70}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B795C60D-96EF-4410-AE58-B5239A059231}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packages", "Packages", "{0B37B83A-A5E5-4187-B40B-540AE7C5D277}"
+	ProjectSection(SolutionItems) = preProject
+		MPowerPayments.dll = MPowerPayments.dll
+		packages\Octokit.0.20.0\ReleaseNotes.md = packages\Octokit.0.20.0\ReleaseNotes.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Octokit.0.20.10", "Octokit.0.20.10", "{38580C9C-BA6A-41C5-959F-754F6D5E3B82}"
+	ProjectSection(SolutionItems) = preProject
+		packages\Octokit.0.20.0\LICENSE.txt = packages\Octokit.0.20.0\LICENSE.txt
+		packages\Octokit.0.20.0\Octokit.0.20.0.nupkg = packages\Octokit.0.20.0\Octokit.0.20.0.nupkg
+		packages\Octokit.0.20.0\README.md = packages\Octokit.0.20.0\README.md
+		packages\Octokit.0.20.0\ReleaseNotes.md = packages\Octokit.0.20.0\ReleaseNotes.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "linqpad-samples", "linqpad-samples", "{D54CAC1C-4317-447E-9849-3702B2AC9D00}"
+	ProjectSection(SolutionItems) = preProject
+		packages\Octokit.0.20.0\linqpad-samples\1-introducing-octokit.linq = packages\Octokit.0.20.0\linqpad-samples\1-introducing-octokit.linq
+		packages\Octokit.0.20.0\linqpad-samples\10-search-issues.linq = packages\Octokit.0.20.0\linqpad-samples\10-search-issues.linq
+		packages\Octokit.0.20.0\linqpad-samples\2-releases.linq = packages\Octokit.0.20.0\linqpad-samples\2-releases.linq
+		packages\Octokit.0.20.0\linqpad-samples\3-browse-repositories.linq = packages\Octokit.0.20.0\linqpad-samples\3-browse-repositories.linq
+		packages\Octokit.0.20.0\linqpad-samples\4-observable-browse-repositories.linq = packages\Octokit.0.20.0\linqpad-samples\4-observable-browse-repositories.linq
+		packages\Octokit.0.20.0\linqpad-samples\5-interact-with-git-database.linq = packages\Octokit.0.20.0\linqpad-samples\5-interact-with-git-database.linq
+		packages\Octokit.0.20.0\linqpad-samples\6-create-repository.linq = packages\Octokit.0.20.0\linqpad-samples\6-create-repository.linq
+		packages\Octokit.0.20.0\linqpad-samples\7-search-for-repos.linq = packages\Octokit.0.20.0\linqpad-samples\7-search-for-repos.linq
+		packages\Octokit.0.20.0\linqpad-samples\8-gists.linq = packages\Octokit.0.20.0\linqpad-samples\8-gists.linq
+		packages\Octokit.0.20.0\linqpad-samples\9-issues.linq = packages\Octokit.0.20.0\linqpad-samples\9-issues.linq
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{B00F6838-7799-4C2C-A504-CEC4A7D4A997}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net45", "net45", "{2D2F7B1E-164D-4CB8-B88B-77D116C0C6B5}"
+	ProjectSection(SolutionItems) = preProject
+		packages\Octokit.0.20.0\lib\net45\Octokit.dll = packages\Octokit.0.20.0\lib\net45\Octokit.dll
+		packages\Octokit.0.20.0\lib\net45\Octokit.pdb = packages\Octokit.0.20.0\lib\net45\Octokit.pdb
+		packages\Octokit.0.20.0\lib\net45\Octokit.XML = packages\Octokit.0.20.0\lib\net45\Octokit.XML
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "netcore451", "netcore451", "{FB80FAD0-6C01-4BC0-8A14-C7CAB458B283}"
+	ProjectSection(SolutionItems) = preProject
+		packages\Octokit.0.20.0\lib\netcore451\Octokit.dll = packages\Octokit.0.20.0\lib\netcore451\Octokit.dll
+		packages\Octokit.0.20.0\lib\netcore451\Octokit.pdb = packages\Octokit.0.20.0\lib\netcore451\Octokit.pdb
+		packages\Octokit.0.20.0\lib\netcore451\Octokit.XML = packages\Octokit.0.20.0\lib\netcore451\Octokit.XML
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "portable-net45+wp90+win+wpa81", "portable-net45+wp90+win+wpa81", "{B9D8F32E-B6B8-4B81-8947-83499AC90A02}"
+	ProjectSection(SolutionItems) = preProject
+		packages\Octokit.0.20.0\lib\portable-net45+wp80+win+wpa81\Octokit.dll = packages\Octokit.0.20.0\lib\portable-net45+wp80+win+wpa81\Octokit.dll
+		packages\Octokit.0.20.0\lib\portable-net45+wp80+win+wpa81\Octokit.pdb = packages\Octokit.0.20.0\lib\portable-net45+wp80+win+wpa81\Octokit.pdb
+		packages\Octokit.0.20.0\lib\portable-net45+wp80+win+wpa81\Octokit.XML = packages\Octokit.0.20.0\lib\portable-net45+wp80+win+wpa81\Octokit.XML
 	EndProjectSection
 EndProject
 Global
@@ -24,5 +75,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{38580C9C-BA6A-41C5-959F-754F6D5E3B82} = {0B37B83A-A5E5-4187-B40B-540AE7C5D277}
+		{D54CAC1C-4317-447E-9849-3702B2AC9D00} = {38580C9C-BA6A-41C5-959F-754F6D5E3B82}
+		{B00F6838-7799-4C2C-A504-CEC4A7D4A997} = {38580C9C-BA6A-41C5-959F-754F6D5E3B82}
+		{2D2F7B1E-164D-4CB8-B88B-77D116C0C6B5} = {B00F6838-7799-4C2C-A504-CEC4A7D4A997}
+		{FB80FAD0-6C01-4BC0-8A14-C7CAB458B283} = {B00F6838-7799-4C2C-A504-CEC4A7D4A997}
+		{B9D8F32E-B6B8-4B81-8947-83499AC90A02} = {B00F6838-7799-4C2C-A504-CEC4A7D4A997}
 	EndGlobalSection
 EndGlobal
