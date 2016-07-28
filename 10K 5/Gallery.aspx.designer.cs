@@ -11,7 +11,7 @@ namespace _10K_5
 {
 
 
-    public partial class _10K_Channel
+    public partial class Gallery
     {
 
         /// <summary>

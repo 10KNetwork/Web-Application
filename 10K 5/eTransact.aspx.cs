@@ -59,9 +59,9 @@ namespace _10K_5
             invoice.Create();
             eWallet.Text = invoice.ResponseText;
             string url = "";
-             string url1 = "";
+            string url1 = "";
             url = invoice.GetInvoiceUrl();
-             url1 = invoice.GetReceiptUrl();
+            url1 = invoice.GetReceiptUrl();
 
 
             Response.Redirect(url, true);
@@ -71,7 +71,7 @@ namespace _10K_5
                 Response.Redirect(url1, true);
 
             }
-       
+
 
 
 
@@ -111,7 +111,6 @@ namespace _10K_5
 
             //{
 
-            }
         }
     }
 }

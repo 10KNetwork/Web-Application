@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace _10K_5
 {
-    public partial class _10K_Channel : System.Web.UI.Page
+    public partial class Gallery : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
