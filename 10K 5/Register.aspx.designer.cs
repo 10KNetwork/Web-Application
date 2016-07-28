@@ -58,13 +58,13 @@ namespace _10K_5 {
         protected global::System.Web.UI.WebControls.DropDownList Area;
         
         /// <summary>
-        /// Ref control.
+        /// Git control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Ref;
+        protected global::System.Web.UI.WebControls.TextBox Git;
         
         /// <summary>
         /// UName control.
