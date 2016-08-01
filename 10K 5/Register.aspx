@@ -171,7 +171,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <asp:TextBox ID="Ref" runat="server" placeholder="Name of Referee"></asp:TextBox>
+                        <asp:TextBox ID="Git" runat="server" placeholder="Github Account"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>

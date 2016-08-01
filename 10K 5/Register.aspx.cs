@@ -41,7 +41,7 @@ namespace _10K_5
             queryStr = "";
 
             queryStr = "INSERT INTO Applicants (FName,LName,Email,Area,Ref,UName,Pass)" +
-                "VALUES ('" + FName.Text + "','" + LName.Text + "','" + Email.Text + "','" + Area.SelectedItem + "','" + Ref.Text + "','" + UName.Text + "','" + CPass.Text + "')";
+                "VALUES ('" + FName.Text + "','" + LName.Text + "','" + Email.Text + "','" + Area.SelectedItem + "','" + Git.Text + "','" + UName.Text + "','" + CPass.Text + "')";
 
                 cmd = new SqlCommand(queryStr, con);
 
@@ -54,7 +54,7 @@ namespace _10K_5
             //FName.Text = "";
             //LName.Text = "";
             //Email.Text = "";
-            //Ref.Text = "";
+            //Git.Text = "";
             //UName.Text = "";
             //Pass.Text = "";
             //CPass.Text = "";

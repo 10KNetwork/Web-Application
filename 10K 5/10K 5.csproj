@@ -75,7 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="10.aspx" />
-    <Content Include="10K Channel.aspx" />
     <Content Include="assignGit.aspx" />
     <Content Include="css\10.css" />
     <Content Include="css\animate.min.css" />
@@ -92,6 +91,7 @@
     <Content Include="eReceipt.aspx" />
     <Content Include="eTransact.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Gallery.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="images\10K.png" />
     <Content Include="images\about-bg.jpg" />
@@ -179,13 +179,6 @@
     <Compile Include="10.aspx.designer.cs">
       <DependentUpon>10.aspx</DependentUpon>
     </Compile>
-    <Compile Include="10K Channel.aspx.cs">
-      <DependentUpon>10K Channel.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="10K Channel.aspx.designer.cs">
-      <DependentUpon>10K Channel.aspx</DependentUpon>
-    </Compile>
     <Compile Include="assignGit.aspx.cs">
       <DependentUpon>assignGit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -206,6 +199,13 @@
     </Compile>
     <Compile Include="eTransact.aspx.designer.cs">
       <DependentUpon>eTransact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gallery.aspx.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gallery.aspx.designer.cs">
+      <DependentUpon>Gallery.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
