@@ -35,14 +35,14 @@ namespace _10K_5
         }
 
 
-        // If you intend to use a simpler approach by redirecting to the MPower checkout page
-        // Please note that the constructor requires a instance of both
+        //If you intend to use a simpler approach by redirecting to the MPower checkout page
+        //Please note that the constructor requires a instance of both
         // MPowerSetup & MPowerStore Classes respectively
-        MPowerCheckoutInvoice invoice = new MPowerCheckoutInvoice(setup, store);
-        // If you wish to accept payments directly on your serviceetup, store);
+        //MPowerCheckoutInvoice invoice = new MPowerCheckoutInvoice(setup, store);
+        //If you wish to accept payments directly on your serviceetup, store);
 
 
-        // Please note that the constructor requires a instance of both
+        //Please note that the constructor requires a instance of both
         // MPowerSetup & MPowerStore Classes respectively
         MPowerOnsiteInvoice invoice_1 = new MPowerOnsiteInvoice(setup, store);
 
@@ -59,9 +59,9 @@ namespace _10K_5
             invoice.Create();
             eWallet.Text = invoice.ResponseText;
             string url = "";
-             string url1 = "";
+            string url1 = "";
             url = invoice.GetInvoiceUrl();
-             url1 = invoice.GetReceiptUrl();
+            url1 = invoice.GetReceiptUrl();
 
 
             Response.Redirect(url, true);
@@ -71,47 +71,48 @@ namespace _10K_5
                 Response.Redirect(url1, true);
 
             }
-       
 
 
 
 
 
-            //if (invoice_1.Create("MPOWER_CUSTOMER_USERNAME_OR_PHONENO"))
-            //{
-            //    Response.Write(invoice_1.Token);
-            //    Response.Write(invoice_1.Status);
-            //    Response.Write(invoice_1.ResponseText);
-            //}
-            //else
-            //{
-            //    Response.Write(invoice_1.ResponseText);
-            //    Response.Write(invoice_1.Status);
-            //};
+
+            if (invoice_1.Create("MPOWER_CUSTOMER_USERNAME_OR_PHONENO"))
+            {
+                Response.Write(invoice_1.Token);
+                Response.Write(invoice_1.Status);
+                Response.Write(invoice_1.ResponseText);
+            }
+            else
+            {
+                Response.Write(invoice_1.ResponseText);
+                Response.Write(invoice_1.Status);
+            };
 
 
-            //if (invoice_1.Charge("OPR_TOKEN", "CUSTOMER_CONFIRM_TOKEN"))
-            //{
-            //    Response.Write(invoice_1.Status);
-            //    Response.Write(invoice_1.ResponseText);
-            //    Response.Write(invoice_1.GetReceiptUrl());
-            //    Response.Write(invoice_1.GetCustomerInfo("name"));
-            //    Response.Write(invoice_1.GetCustomerInfo("email"));
-            //    invoice.GetReceiptUrl();
-            //    string url_1 = "";
-            //    url_1 = invoice_1.GetReceiptUrl();
-            //    Response.Redirect(url_1, true);
-            //}
+            if (invoice_1.Charge("OPR_TOKEN", "CUSTOMER_CONFIRM_TOKEN"))
+            {
+                Response.Write(invoice_1.Status);
+                Response.Write(invoice_1.ResponseText);
+                Response.Write(invoice_1.GetReceiptUrl());
+                Response.Write(invoice_1.GetCustomerInfo("name"));
+                Response.Write(invoice_1.GetCustomerInfo("email"));
+                invoice.GetReceiptUrl();
+                string url_1 = "";
+                url_1 = invoice_1.GetReceiptUrl();
+                Response.Redirect(url_1, true);
+            }
 
-            //else
-            //{
-            //    Response.Write(invoice.Status);
-            //    Response.Write(invoice.ResponseText);
-            //}
+            else
+            {
+                Response.Write(invoice.Status);
+                Response.Write(invoice.ResponseText);
+            }
 
-            //{
+            {
 
             }
         }
     }
 }
+  

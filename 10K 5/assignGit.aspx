@@ -9,12 +9,27 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    
+        <asp:Label runat="server" Width="161px"  Text="Enter Github username:"/>
         <asp:TextBox ID="GitAcc" runat="server"></asp:TextBox>
-        <asp:Button ID="GitAssign" runat="server" Text="Assign" OnClick="GitAssign_Click" />
-        
-    
     </div>
+        <asp:Label runat="server" Width="161px"  Text="Choose Team:"/>
+        <asp:DropDownList ID="TeamList" runat="server" Width="161px"  />
+        <p>
+        <asp:Button ID="GitAssign" runat="server" Text="Join Team" OnClick="GitAssign_Click" />
+        </p>
+        <asp:Label runat="server" Width="161px"  Text="Choose Project:"/>
+        <asp:DropDownList ID="RepoList" runat="server" Width="161px"  />
+        <p>
+        <asp:Label runat="server" Width="161px"  Text="Project Description:"/>
+        <asp:TextBox ID="Descriptiontxt" runat="server" Height="124px" Width="312px" Text="<%# description%>"/>
+        </p>
+        <p>
+        <asp:Button ID="AddCollab" runat="server" Text="Join Project" OnClick="AddCollab_Click" />
+        </p>
+        <p>
+            <asp:Label runat="server" Width="161px"  Text="10KNetwork Members:"/>
+            <asp:ListBox ID="MemberList" runat="server" Width="161px"  />
+        </p>
     </form>
 </body>
 </html>

@@ -31,6 +31,15 @@ namespace _10K_5 {
         protected global::System.Web.UI.WebControls.TextBox GitAcc;
         
         /// <summary>
+        /// TeamList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList TeamList;
+        
+        /// <summary>
         /// GitAssign control.
         /// </summary>
         /// <remarks>
@@ -38,5 +47,41 @@ namespace _10K_5 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button GitAssign;
+        
+        /// <summary>
+        /// RepoList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList RepoList;
+        
+        /// <summary>
+        /// Descriptiontxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Descriptiontxt;
+        
+        /// <summary>
+        /// AddCollab control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button AddCollab;
+        
+        /// <summary>
+        /// MemberList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox MemberList;
     }
 }
