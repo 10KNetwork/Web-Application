@@ -92,6 +92,9 @@
     <Content Include="eTransact.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Gallery.aspx" />
+    <Content Include="gallery\Bootstrap.jpg" />
+    <Content Include="gallery\css3.jpg" />
+    <Content Include="gallery\boots.png" />
     <Content Include="Home.aspx" />
     <Content Include="images\10K.png" />
     <Content Include="images\about-bg.jpg" />
