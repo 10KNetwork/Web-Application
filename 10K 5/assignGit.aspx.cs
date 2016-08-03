@@ -8,6 +8,7 @@ using Octokit;
 using Octokit.Internal;
 using System.Threading.Tasks;
 using System.Collections.Specialized;
+using System.Text;
 
 namespace _10K_5
 {
@@ -17,13 +18,14 @@ namespace _10K_5
         {
             get { return Repository[RepoList.SelectedItem.ToString()]; }
         }
-
+        Dictionary<string, kmembers> kmemberdictionary = new Dictionary<string, kmembers>();
         private NameValueCollection Teams = new NameValueCollection();
         private NameValueCollection Repository = new NameValueCollection();
-        const string token = "10cdce596df42b41124ae9a12c1897dc6acb2fd9";
+        const string token = "MzIyYTg4ZTVjNWMyZjAwZDA5YjVmYzJiNTQ1Y2M3ZjliN2E3NTc0MA==";
         const string org ="10KNetwork";
         GitHubClient github = new GitHubClient(new ProductHeaderValue(org),
-            new InMemoryCredentialStore(new Credentials(token)));
+            new InMemoryCredentialStore(new Credentials(Encoding.UTF8.GetString(Convert.FromBase64String(token)))));
+
 
         protected async void Page_Load(object sender, EventArgs e)
         {
@@ -32,6 +34,13 @@ namespace _10K_5
             var Repos = await github.Repository.GetAllForOrg(org);
 
 
+            /// populate kmemberdictionary
+            /// using user login ,user object key-pairs
+            foreach (var user in members)
+            {
+                kmemberdictionary.Add(user.Login, new kmembers(user));
+            }
+
             //Populate DropMenuList with teams
             List<string> _items = new List<string>();
             foreach (var team in teams)
@@ -39,37 +48,87 @@ namespace _10K_5
                 _items.Add(team.Name);
                 Teams.Add(team.Name, team.Id.ToString());
             }
-            TeamList.DataSource =_items;
+            TeamList.DataSource = _items;
             TeamList.DataBind();
 
-            
+
             //Populate DropMenuList with Repositories
+            //organise repository commits under list of kmembers
             List<string> items = new List<string>();
+            List<IReadOnlyList<GitHubCommit>> RepoCommitList = new List<IReadOnlyList<GitHubCommit>>();
+
+            //populate RepoCommitList
             foreach (var repository in Repos)
             {
-                
+
                 items.Add(repository.Name);
                 Repository.Add(repository.Name, repository.Description);
-                
+                IReadOnlyList<GitHubCommit> commitlist = null;
+                try
+                {
+                    commitlist = await github.Repository.Commit.GetAll(owner: repository.Owner.Login, name: repository.Name);
+                }
+                catch (ApiException er)
+                {
+                }
+                finally
+                {
+                    if (commitlist != null)
+                    {
+                        RepoCommitList.Add(commitlist);
+                    }
+
+                }
             }
+            foreach (var commitlist in RepoCommitList)
+            {
+                foreach (var commit in commitlist)
+                {
+                    try
+                    {
+                        kmemberdictionary[commit.Author.Login].commitList.Add(commit);
+
+                    }
+                    catch (KeyNotFoundException) { }
+                    finally { }
+
+                }
+            }
+
+
+            //display through databinding repositories in RepoList
             RepoList.DataSource = items;
             RepoList.DataBind();
-            
-            //Binding description to selected repo
-            
 
-
+            //Binding description text to selected repository description
             Descriptiontxt.DataBind();
 
 
-            //Populate MemberList with Repositories
-            List<string> itemz = new List<string>();
-            MemberList.DataTextField = "Login";
-            MemberList.DataSource = members;
-            MemberList.DataBind();
+
+            //Populate MemberList with members
+            if (!IsPostBack)
+            {
+               
+                MemberList.DataTextField = "Value";
+                MemberList.DataValueField = "Key";
+                MemberList.DataSource = kmemberdictionary;
+                MemberList.DataBind();
+            }
+
+
+            foreach (var member in kmemberdictionary)
+            {
+                member.Value.createDescriptionList();
+            }
 
             //Creating a User commits display
-           
+            if (!IsPostBack) {
+                
+                Listl.DataSource = kmemberdictionary[MemberList.Items[0].Text].DescriptionList;
+                Listl.DataBind();
+            }
+            
+
 
 
         }
@@ -86,6 +145,12 @@ namespace _10K_5
             
         }
 
+        protected void Select(object sender, EventArgs e)
+        {
+            //Creating a User commits display
+            Listl.DataSource = kmemberdictionary[MemberList.SelectedValue].DescriptionList;
+            Listl.DataBind();
+        }
         
     }
 }

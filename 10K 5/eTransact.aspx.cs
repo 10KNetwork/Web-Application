@@ -35,16 +35,16 @@ namespace _10K_5
         }
 
 
-        //If you intend to use a simpler approach by redirecting to the MPower checkout page
-        //Please note that the constructor requires a instance of both
-        // MPowerSetup & MPowerStore Classes respectively
-        //MPowerCheckoutInvoice invoice = new MPowerCheckoutInvoice(setup, store);
-        //If you wish to accept payments directly on your serviceetup, store);
+        ////If you intend to use a simpler approach by redirecting to the MPower checkout page
+        ////Please note that the constructor requires a instance of both
+        //// MPowerSetup & MPowerStore Classes respectively
+        ////MPowerCheckoutInvoice invoice = new MPowerCheckoutInvoice(setup, store);
+        ////If you wish to accept payments directly on your serviceetup, store);
 
 
-        //Please note that the constructor requires a instance of both
-        // MPowerSetup & MPowerStore Classes respectively
-        MPowerOnsiteInvoice invoice_1 = new MPowerOnsiteInvoice(setup, store);
+        ////Please note that the constructor requires a instance of both
+        //// MPowerSetup & MPowerStore Classes respectively
+        //MPowerOnsiteInvoice invoice_1 = new MPowerOnsiteInvoice(setup, store);
 
         protected void eWallet_Click(object sender, EventArgs e)
         {
@@ -59,9 +59,9 @@ namespace _10K_5
             invoice.Create();
             eWallet.Text = invoice.ResponseText;
             string url = "";
-             string url1 = "";
+            string url1 = "";
             url = invoice.GetInvoiceUrl();
-             url1 = invoice.GetReceiptUrl();
+            url1 = invoice.GetReceiptUrl();
 
 
             Response.Redirect(url, true);
@@ -71,7 +71,7 @@ namespace _10K_5
                 Response.Redirect(url1, true);
 
             }
-       
+
 
 
 

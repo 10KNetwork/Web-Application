@@ -28,8 +28,11 @@
         </p>
         <p>
             <asp:Label runat="server" Width="161px"  Text="10KNetwork Members:"/>
-            <asp:ListBox ID="MemberList" runat="server" Width="161px"  />
+            <asp:ListBox ID="MemberList" runat="server" Width="161px" OnSelectedIndexChanged="Select"  AutoPostBack="true"/>
+
         </p>
+        <asp:ListBox runat="server" ID="Listl" AutoPostBack="true">
+        </asp:ListBox>
     </form>
 </body>
 </html>
