@@ -60,8 +60,12 @@ namespace _10K_5
             //CPass.Text = "";
         }
 
-        public string Send_Email_With_Given_Parameters(string Email_Account, string Email_Pass, string SMTP_Server_Port, string SMTP_Server_Host, bool SMTP_Server_Enable_SSL, bool Include_Attachment, string Attachment_Path, string Email_From_Address, string Email_To_Address, string Email_Message,
-string Email_Subject)
+        public string Send_Email_With_Given_Parameters(string Email_Account,
+            string Email_Pass, string SMTP_Server_Port,
+            string SMTP_Server_Host, bool SMTP_Server_Enable_SSL,
+            bool Include_Attachment, string Attachment_Path,
+            string Email_From_Address, string Email_To_Address,
+            string Email_Message, string Email_Subject)
         {
 
            // try

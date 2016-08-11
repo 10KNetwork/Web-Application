@@ -190,6 +190,7 @@
     <Compile Include="assignGit.aspx.designer.cs">
       <DependentUpon>assignGit.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EmailHandler.cs" />
     <Compile Include="eReceipt.aspx.cs">
       <DependentUpon>eReceipt.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -5,6 +5,10 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using MPowerPayments;
+using System.Data.SqlClient;
+using System.Configuration;
+using System.Net.Mail;
+using System.Net;
 
 namespace _10K_5
 {
@@ -53,8 +57,8 @@ namespace _10K_5
 
 
 
-            invoice.AddItem("Gold", 1, 4.5, 4.5);
-            invoice.SetTotalAmount(4.5);
+            invoice.AddItem("Gold", 1, 1, 1);
+            invoice.SetTotalAmount(1);
 
             invoice.Create();
             eWallet.Text = invoice.ResponseText;
@@ -68,8 +72,10 @@ namespace _10K_5
 
             if (url1 != "")
             {
+                EmailHandler email = new EmailHandler();
+                email.Send_Email_With_Given_Parameters("support@adroitbureau.com", "adroit01", "587", "smtp.gmail.com", true, false, "", "ehprimus09@gmail.com", "msg", "Hi there, it's working","Register.aspx");
                 Response.Redirect(url1, true);
-
+                Response.Write(String.Format("window.open('{0}','_blank')", ResolveUrl(url1)));
             }
 
 
@@ -109,9 +115,11 @@ namespace _10K_5
             //    Response.Write(invoice.ResponseText);
             //}
 
-            {
-
-            }
+            
         }
+       
     }
 }
+
+
+    
