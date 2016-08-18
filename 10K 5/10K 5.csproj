@@ -88,6 +88,7 @@
     <Content Include="css\presets\preset5.css" />
     <Content Include="css\presets\preset6.css" />
     <Content Include="css\responsive.css" />
+    <Content Include="css\tried.css" />
     <Content Include="eReceipt.aspx" />
     <Content Include="eTransact.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
@@ -96,6 +97,8 @@
     <Content Include="gallery\Bootstrap.jpg" />
     <Content Include="gallery\css3.jpg" />
     <Content Include="gallery\boots.png" />
+    <Content Include="Help here\second.css" />
+    <Content Include="Help here\second.js" />
     <Content Include="Home.aspx" />
     <Content Include="images\10K.png" />
     <Content Include="images\about-bg.jpg" />
@@ -128,6 +131,7 @@
     <Content Include="images\team\4.jpg" />
     <Content Include="images\team\5.jpg" />
     <Content Include="images\twitter-bg.jpg" />
+    <Content Include="images\asanoha-400px.png" />
     <Content Include="img\connectivity.jpg" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -173,6 +177,7 @@
     <Content Include="img\pic14.jpg" />
     <Content Include="Register.aspx" />
     <Content Include="img\reliant.jpg" />
+    <Content Include="Help here\Second.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -241,6 +246,13 @@
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Help here\Second.aspx.cs">
+      <DependentUpon>Second.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Help here\Second.aspx.designer.cs">
+      <DependentUpon>Second.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

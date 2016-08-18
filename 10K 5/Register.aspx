@@ -16,8 +16,8 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <%--<!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">--%>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,6 +32,9 @@
             src: url('orange juice 2.0.ttf');
         }*/
 
+        body {
+            background-image:url('asanoha-400px.png');
+        }
         h1{
             font-family:'Segoe UI', sans-serif;
             text-align:center
@@ -40,14 +43,16 @@
         .new{
             margin-top:150px;
             margin-right:auto;
-            margin-left:auto
+            margin-left:auto;
+            background-image:url(asanoha-400px.png)
 
         }
 
         .center{
             width:200px;
             margin:auto;
-            font-family:'Segoe UI'
+            font-family:'Segoe UI';
+            background-image:url('asanoha-400px.png')
         }
 
         input[type=text]{
@@ -92,7 +97,10 @@
             background-color: #c1bdba;
             padding:50px
         }
+
+        
     </style>
+    <link href="css/tried.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
