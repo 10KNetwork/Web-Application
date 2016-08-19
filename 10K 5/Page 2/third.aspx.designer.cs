@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyForm {
+namespace _10K_5.Page_2 {
     
     
-    public partial class Try2 {
+    public partial class third {
         
         /// <summary>
         /// msform control.

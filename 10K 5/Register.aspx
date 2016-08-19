@@ -44,7 +44,7 @@
             margin-top:150px;
             margin-right:auto;
             margin-left:auto;
-            background-image:url(asanoha-400px.png)
+            background-image:url('asanoha-400px.png')
 
         }
 

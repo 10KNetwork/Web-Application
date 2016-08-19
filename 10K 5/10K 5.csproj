@@ -97,8 +97,6 @@
     <Content Include="gallery\Bootstrap.jpg" />
     <Content Include="gallery\css3.jpg" />
     <Content Include="gallery\boots.png" />
-    <Content Include="Help here\second.css" />
-    <Content Include="Help here\second.js" />
     <Content Include="Home.aspx" />
     <Content Include="images\10K.png" />
     <Content Include="images\about-bg.jpg" />
@@ -175,9 +173,13 @@
     <Content Include="js\jquery.js" />
     <Content Include="js\scrolling-nav.js" />
     <Content Include="img\pic14.jpg" />
+    <Content Include="Page 2\asanoha-400px.png" />
+    <Content Include="Page 2\first.aspx" />
+    <Content Include="Page 2\first.css" />
+    <Content Include="Page 2\second.aspx" />
+    <Content Include="Page 2\third.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="img\reliant.jpg" />
-    <Content Include="Help here\Second.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -239,6 +241,27 @@
     <Compile Include="Member.aspx.designer.cs">
       <DependentUpon>Member.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Page 2\first.aspx.cs">
+      <DependentUpon>first.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page 2\first.aspx.designer.cs">
+      <DependentUpon>first.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page 2\second.aspx.cs">
+      <DependentUpon>second.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page 2\second.aspx.designer.cs">
+      <DependentUpon>second.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page 2\third.aspx.cs">
+      <DependentUpon>third.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page 2\third.aspx.designer.cs">
+      <DependentUpon>third.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
@@ -246,13 +269,6 @@
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Help here\Second.aspx.cs">
-      <DependentUpon>Second.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Help here\Second.aspx.designer.cs">
-      <DependentUpon>Second.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
