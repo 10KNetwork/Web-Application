@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="assignGit.aspx.cs" Inherits="_10K_5.assignGit" UnobtrusiveValidationMode=None Async="true" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="assignGit.aspx.cs" Inherits="_10K_5.assignGit" UnobtrusiveValidationMode=None Async="true" AsyncTimeout="120"%>
 
 <!DOCTYPE html>
 
@@ -21,7 +21,7 @@
         <asp:DropDownList ID="RepoList" runat="server" Width="161px"  />
         <p>
         <asp:Label runat="server" Width="161px"  Text="Project Description:"/>
-        <asp:TextBox ID="Descriptiontxt" runat="server" Height="124px" Width="312px" Text="<%# description%>"/>
+        <asp:TextBox ID="Descriptiontxt" runat="server" Height="124px" Width="312px"/>
         </p>
         <p>
         <asp:Button ID="AddCollab" runat="server" Text="Join Project" OnClick="AddCollab_Click" />

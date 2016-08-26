@@ -14,10 +14,7 @@ namespace _10K_5
 {
     public partial class assignGit : System.Web.UI.Page
     {
-        public string description
-        {
-            get { return Repository[RepoList.SelectedItem.ToString()]; }
-        }
+       
         Dictionary<string, kmembers> kmemberdictionary = new Dictionary<string, kmembers>();
         private NameValueCollection Teams = new NameValueCollection();
         private NameValueCollection Repository = new NameValueCollection();
@@ -29,10 +26,39 @@ namespace _10K_5
 
         protected async void Page_Load(object sender, EventArgs e)
         {
-            var teams = await github.Organization.Team.GetAll(org);
-            var members = await github.Organization.Member.GetAll(org);
-            var Repos = await github.Repository.GetAllForOrg(org);
+            //RegisterAsyncTask(new PageAsyncTask(LoadData));
+            await LoadData();
+        }
 
+        protected async void GitAssign_Click(object sender, EventArgs e)
+        {
+            var member = await github.Organization.Team.AddMembership(id:int.Parse(Teams[TeamList.SelectedItem.Text]), login: GitAcc.Text);
+            
+        }
+
+        protected async void AddCollab_Click(object sender, EventArgs e)
+        {
+            await github.Repository.Collaborator.Add(org, RepoList.SelectedItem.Text, GitAcc.Text);
+            
+        }
+
+        protected void Select(object sender, EventArgs e)
+        {
+            
+            //Creating a User commits display
+            Listl.DataSource = kmemberdictionary[MemberList.SelectedValue].DescriptionList;
+            Listl.DataBind();
+        }
+        public async Task LoadData()
+        {
+            var teamsTask = github.Organization.Team.GetAll(org);
+            var membersTask = github.Organization.Member.GetAll(org);
+            var ReposTask = github.Repository.GetAllForOrg(org);
+
+            await Task.WhenAll(teamsTask, membersTask, ReposTask);
+            var teams = await teamsTask;
+            var members = await membersTask;
+            var Repos = await ReposTask;
 
             /// populate kmemberdictionary
             /// using user login ,user object key-pairs
@@ -51,64 +77,43 @@ namespace _10K_5
             TeamList.DataSource = _items;
             TeamList.DataBind();
 
-
             //Populate DropMenuList with Repositories
             //organise repository commits under list of kmembers
             List<string> items = new List<string>();
-            List<IReadOnlyList<GitHubCommit>> RepoCommitList = new List<IReadOnlyList<GitHubCommit>>();
+            List<GitHubCommit> repoCommitList = new List<GitHubCommit>();
 
             //populate RepoCommitList
-            foreach (var repository in Repos)
+            var tasks = Repos.Select((repository) => processAsync(repository,items,repoCommitList)).ToArray();
+            var container = await Task.WhenAll(tasks);
+            foreach(var contained in container)
             {
+                if(contained !=null)
+                    repoCommitList.AddRange(contained);
+            }
 
-                items.Add(repository.Name);
-                Repository.Add(repository.Name, repository.Description);
-                IReadOnlyList<GitHubCommit> commitlist = null;
+
+
+            foreach (var commit in repoCommitList)
+            {
                 try
                 {
-                    commitlist = await github.Repository.Commit.GetAll(owner: repository.Owner.Login, name: repository.Name);
-                }
-                catch (ApiException er)
-                {
-                }
-                finally
-                {
-                    if (commitlist != null)
-                    {
-                        RepoCommitList.Add(commitlist);
-                    }
+                    kmemberdictionary[commit.Author.Login].commitList.Add(commit);
 
                 }
+                catch (KeyNotFoundException) { }
+                finally { }
+
             }
-            foreach (var commitlist in RepoCommitList)
-            {
-                foreach (var commit in commitlist)
-                {
-                    try
-                    {
-                        kmemberdictionary[commit.Author.Login].commitList.Add(commit);
-
-                    }
-                    catch (KeyNotFoundException) { }
-                    finally { }
-
-                }
-            }
-
 
             //display through databinding repositories in RepoList
             RepoList.DataSource = items;
             RepoList.DataBind();
-
             //Binding description text to selected repository description
             Descriptiontxt.DataBind();
-
-
-
             //Populate MemberList with members
             if (!IsPostBack)
             {
-               
+
                 MemberList.DataTextField = "Value";
                 MemberList.DataValueField = "Key";
                 MemberList.DataSource = kmemberdictionary;
@@ -122,35 +127,39 @@ namespace _10K_5
             }
 
             //Creating a User commits display
-            if (!IsPostBack) {
-                
-                Listl.DataSource = kmemberdictionary[MemberList.Items[0].Text].DescriptionList;
+            if (!IsPostBack)
+            {
+
+                Listl.DataSource = kmemberdictionary[MemberList.Items[0].Text].commitList;
                 Listl.DataBind();
             }
-            
-
-
+            else
+            {
+                foreach(var mem in kmemberdictionary)
+                {
+                    mem.Value.createDescriptionList();
+                }
+            }
 
         }
 
-        protected async void GitAssign_Click(object sender, EventArgs e)
+        private async Task<IReadOnlyList<GitHubCommit>> processAsync(Octokit.Repository repository,List<string> items,
+        List<GitHubCommit> repoCommitList)
         {
-            var member = await github.Organization.Team.AddMembership(id:int.Parse(Teams[TeamList.SelectedItem.Text]), login: GitAcc.Text);
-            
-        }
 
-        protected async void AddCollab_Click(object sender, EventArgs e)
-        {
-            await github.Repository.Collaborator.Add(org, RepoList.SelectedItem.Text, GitAcc.Text);
-            
+            items.Add(repository.Name);
+            Repository.Add(repository.Name, repository.Description);
+            IReadOnlyList<GitHubCommit> commitlist = null;
+            try
+            {
+                commitlist = await github.Repository.Commit.GetAll(owner: repository.Owner.Login, name: repository.Name);
+            }
+            catch (ApiException er)
+            {
+            }
+            return commitlist;
         }
-
-        protected void Select(object sender, EventArgs e)
-        {
-            //Creating a User commits display
-            Listl.DataSource = kmemberdictionary[MemberList.SelectedValue].DescriptionList;
-            Listl.DataBind();
-        }
-        
     }
+
+    
 }

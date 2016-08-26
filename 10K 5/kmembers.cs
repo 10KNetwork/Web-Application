@@ -26,16 +26,24 @@ namespace _10K_5
         public void createDescriptionList()
         {
             List<string> Description = new List<string>();
-            foreach(var commit in commitList)
+            if(commitList !=null)
             {
-                string Commitdescription = commit.Sha[0].ToString();
-                Commitdescription += commit.Sha[1].ToString();
-                Commitdescription += commit.Sha[2].ToString();
-                Commitdescription += commit.Sha[3].ToString();
-                Commitdescription += commit.Sha[4].ToString();
-                Commitdescription += ": " + commit.Commit.Message;
-                Description.Add(Commitdescription);
+                
+                foreach (var commit in commitList)
+                {
+                    if (commit != null) {
+                        string Commitdescription = commit.Sha[0].ToString();
+                        Commitdescription += commit.Sha[1].ToString();
+                        Commitdescription += commit.Sha[2].ToString();
+                        Commitdescription += commit.Sha[3].ToString();
+                        Commitdescription += commit.Sha[4].ToString();
+                        Commitdescription += ": " + commit.Commit.Message;
+                        Description.Add(Commitdescription);
+                    }
+                        
+                }
             }
+           
             DescriptionList = Description;
             
         }
