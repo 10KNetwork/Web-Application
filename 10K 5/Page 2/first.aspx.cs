@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace _10K_5.Page_2
 {
@@ -27,9 +28,11 @@ namespace _10K_5.Page_2
 
         private void EnterUser()
         {
-            String conString = System.Configuration.ConfigurationManager.ConnectionStrings["10KConnectionString"].ToString();
+            //String conString = System.Configuration.ConfigurationManager.ConnectionStrings["10KConnectionString"].ToString();
 
-            con = new SqlConnection(conString);
+           SqlConnection con = new SqlConnection (@"Data Source=DESKTOP-H2497G6\SQLEXPRESS;Initial Catalog=10K;Integrated Security=True");
+            
+            //con = new SqlConnection(conString);
 
             con.Open();
 

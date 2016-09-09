@@ -87,8 +87,9 @@
             <%--<li class="scroll"><a href="#portfolio">Portfolio</a></li>--%>            
             <li class="scroll"><a href="#team">Leaders</a></li>
               <li class="scroll"><a href="#pricing">Pricing</a></li>
-            <%--<li class="scroll"><a href="#blog">Blog</a></li>--%>
+            <li class="scroll"><a href="Gallery.aspx">Resources</a></li>
             <li class="scroll"><a href="#contact">Contact</a></li>       
+              <li class="scroll"><a href="Sign.aspx">Sign In</a></li>
           </ul>
         </div>
       </div>

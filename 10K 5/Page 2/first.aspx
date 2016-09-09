@@ -20,7 +20,7 @@
     <input type="text" name="email" placeholder="Email" id="Email" required/>
     <input type="password" name="pass" placeholder="Password" id="Pass" required/>
     <input type="password" name="cpass" placeholder="Confirm Password" id="CPass" required/>
-    <input type="button" runat="server" name="next" class="next action-button" value="Next" id="submit" OnClick="EnterUser"/>
+    <input type="button" runat="server" name="next" class="next action-button" value="Register" id="submit" OnClick="EnterUser"/>
   </fieldset>
   </div>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:10KConnectionString %>" SelectCommand="SELECT * FROM [Renewal]"></asp:SqlDataSource>

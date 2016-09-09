@@ -47,9 +47,9 @@
       <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Desktop\mpower_dotnet_latest\Release\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Octokit, Version=0.20.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -88,10 +88,12 @@
     <Content Include="css\presets\preset5.css" />
     <Content Include="css\presets\preset6.css" />
     <Content Include="css\responsive.css" />
+    <Content Include="css\third.css" />
     <Content Include="css\tried.css" />
     <Content Include="eReceipt.aspx" />
     <Content Include="eTransact.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="ForSlack.aspx" />
     <Content Include="ForYoutube.aspx" />
     <Content Include="Gallery.aspx" />
     <Content Include="gallery\Bootstrap.jpg" />
@@ -180,9 +182,11 @@
     <Content Include="Page 2\third.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="img\reliant.jpg" />
+    <Content Include="Sign.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include=".Spritely.Recipes\InheritedTypeJsonConverter\InheritedTypeJsonConverter.cs" />
     <Compile Include="10.aspx.cs">
       <DependentUpon>10.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -211,6 +215,12 @@
     </Compile>
     <Compile Include="eTransact.aspx.designer.cs">
       <DependentUpon>eTransact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForSlack.aspx.cs">
+      <DependentUpon>ForSlack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForSlack.aspx.designer.cs">
+      <DependentUpon>ForSlack.aspx</DependentUpon>
     </Compile>
     <Compile Include="ForYoutube.aspx.cs">
       <DependentUpon>ForYoutube.aspx</DependentUpon>
@@ -269,6 +279,13 @@
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sign.aspx.cs">
+      <DependentUpon>Sign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sign.aspx.designer.cs">
+      <DependentUpon>Sign.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

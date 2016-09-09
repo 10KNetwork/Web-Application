@@ -1,0 +1,58 @@
+﻿body {
+    background-image:url('asanoha-400px.png')
+}
+
+.table{
+    /*width:100%;*/
+    width: 400px;
+	margin: 100px auto;
+	text-align: center;
+	position: relative;
+
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 30px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+h2{
+    font-weight: normal;
+	font-size: 15px;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+#feed{
+    width: 100px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+
+.table #mine{
+    background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+}
+
+input[type=text]{
+    padding: 20px 30px;
+	box-sizing: border-box;
+}
