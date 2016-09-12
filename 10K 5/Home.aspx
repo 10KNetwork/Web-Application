@@ -42,21 +42,21 @@
           <div class="caption">
             <h1 class="animated fadeInLeftBig">JOIN US DEVELOP <span>OPEN SOURCE</span> APPS</h1>
             <p class="animated fadeInRightBig">App Development - Game Development - Web Applications - Database Development</p>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="Register.aspx">JOIN US</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="New.aspx">JOIN US</a>
           </div>
         </div>
         <div class="item" style="background-image: url(images/slider/2.jpg)">
           <div class="caption">
             <h1 class="animated fadeInLeftBig">LEARN <span>SOFTWARE DEVELOPMENT</span> HANDS ON</h1>
             <p class="animated fadeInRightBig">App Development - Game Development - Web Applications - Database Development</p>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="Register.aspx">JOIN US</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="New.aspx">JOIN US</a>
           </div>
         </div>
         <div class="item" style="background-image: url(images/slider/3.jpg)">
           <div class="caption">
             <h1 class="animated fadeInLeftBig">BECOME AN <span>ASSOCIATE</span> TODAY!</h1>
             <p class="animated fadeInRightBig">App Development - Game Development - Web Applications - Database Development</p>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="Register.aspx">JOIN US</a>
+            <a data-scroll class="btn btn-start animated fadeInUpBig" href="New.aspx">JOIN US</a>
           </div>
         </div>
       </div>

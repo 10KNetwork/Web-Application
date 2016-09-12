@@ -17,7 +17,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <%--<!-- Custom CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">--%>
+    <link href="css/third.css" rel="stylesheet">--%>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,8 +32,12 @@
             src: url('orange juice 2.0.ttf');
         }*/
 
-        body {
-            background-image:url('asanoha-400px.png');
+        /*body {
+            background-image:url('images/asanoha-400px.png');
+        }*/
+
+        body{
+            background-image:url('images/asanoha-400px.png')
         }
         h1{
             font-family:'Segoe UI', sans-serif;

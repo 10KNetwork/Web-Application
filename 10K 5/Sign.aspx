@@ -10,6 +10,10 @@
         .auto-style1 {
             width: 100%;
         }
+
+        body{
+            background-image:url('images/asanoha-400px.png')
+        }
     </style>
 </head>
 <body>
