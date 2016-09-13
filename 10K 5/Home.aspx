@@ -765,9 +765,9 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
                 <ul class="address">
                   <li><i class="fa fa-map-marker"></i> <span> Address:</span> 2400 South Avenue A </li>
-                  <li><i class="fa fa-phone"></i> <span> Phone:</span> +928 336 2000  </li>
-                  <li><i class="fa fa-envelope"></i> <span> Email:</span><a href="mailto:someone@yoursite.com"> support@oxygen.com</a></li>
-                  <li><i class="fa fa-globe"></i> <span> Website:</span> <a href="#">www.sitename.com</a></li>
+                  <li><i class="fa fa-phone"></i> <span> Phone:</span> +233 54 123 5271  </li>
+                  <li><i class="fa fa-envelope"></i> <span> Email:</span><a href="mailto:someone@yoursite.com"> support@adroitbureau.com</a></li>
+                  <li><i class="fa fa-globe"></i> <span> Website:</span> <a href="#">www.10knetwork.com</a></li>
                 </ul>
               </div>                            
             </div>
@@ -777,7 +777,7 @@
     </div>        
   </section><!--/#contact-->
   <footer id="footer">
-    <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+    <%--<div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
       <div class="container text-center">
         <div class="footer-logo">
           <a href="index.html"><img class="img-responsive" src="images/logo.png" alt=""></a>
@@ -793,7 +793,7 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div>--%>
     <div class="footer-bottom">
       <div class="container">
         <div class="row">
@@ -801,7 +801,7 @@
             <p>&copy; 2014 Oxygen Theme.</p>
           </div>
           <div class="col-sm-6">
-            <p class="pull-right">Designed by <a href="http://www.themeum.com/">Themeum</a></p>
+            <p class="pull-right">Designed by <a href="http://www.themeum.com/">eMine</a></p>
           </div>
         </div>
       </div>

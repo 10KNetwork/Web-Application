@@ -70,6 +70,7 @@ h3 {
 
 .btn.btn-primary:hover {
   background-color: #017fb5;
+  /*background-color:#b30000;*/
 }
 
 .navbar-nav li a:hover, 
@@ -271,6 +272,7 @@ section {
 
 .navbar-right li.active a {
   background-color: rgba(0,0,0,.2);
+  /*background-color:#b30000;*/
 }
 
 .navbar-brand h1 {

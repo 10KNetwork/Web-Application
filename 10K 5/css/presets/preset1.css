@@ -6,16 +6,19 @@ a,
 .single-table.featured .btn.btn-primary, 
 .contact-info ul li a:hover, 
 #footer .footer-bottom a  {
-  color: #028fcc;
+  /*color: #028fcc;*/
+  color:#b30000;
 }
 
 .btn.btn-primary:hover,
 .btn-submit:hover {
-  background-color: #027db3
+  /*background-color: #027db3;*/
+  background-color:#990000
 }
 
 a:hover, a:focus {
-	color: #027db3;
+	/*color: #027db3;*/
+    color:#990000;
 }
 
 .main-nav, 
@@ -34,7 +37,8 @@ a:hover, a:focus {
 .left-control:hover, 
 .right-control:hover, 
 .folio-overview a:hover {
-  background-color:#028fcc;
+  /*background-color:#028fcc;*/
+  background-color:#b30000;
 }
 
 .twitter-left-control:hover, 
