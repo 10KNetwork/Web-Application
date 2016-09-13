@@ -91,6 +91,7 @@
     <Content Include="Default.aspx" />
     <Content Include="eReceipt.aspx" />
     <Content Include="eTransact.aspx" />
+    <Content Include="figure.aspx" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="ForSlack.aspx" />
     <Content Include="ForYoutube.aspx" />
@@ -221,6 +222,13 @@
     </Compile>
     <Compile Include="eTransact.aspx.designer.cs">
       <DependentUpon>eTransact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="figure.aspx.cs">
+      <DependentUpon>figure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="figure.aspx.designer.cs">
+      <DependentUpon>figure.aspx</DependentUpon>
     </Compile>
     <Compile Include="ForSlack.aspx.cs">
       <DependentUpon>ForSlack.aspx</DependentUpon>
