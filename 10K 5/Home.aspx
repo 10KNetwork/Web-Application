@@ -76,7 +76,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="Home.aspx">
-            <h1><img class="img-responsive" src="images/logo.png" alt="logo"></h1>
+            <%--<h1><img class="img-responsive" src="images/logo.png" alt="logo"></h1>--%>
           </a>                    
         </div>
         <div class="collapse navbar-collapse">
@@ -730,7 +730,8 @@
         <div class="row">
           <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
             <h2>Contact Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+            <%--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>--%>
+              <p>Whether it's a small project for your local shop or a huge project for your corporation, we have the skills and expertise you require</p>
           </div>
         </div>
         <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
