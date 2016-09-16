@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>The 10K Network|Home</title>
+  <title>10K Network|Home</title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/animate.min.css" rel="stylesheet"> 
   <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -76,7 +76,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="Home.aspx">
-            <%--<h1><img class="img-responsive" src="images/logo.png" alt="logo"></h1>--%>
+            <h1><%--<img class="img-responsive" src="images/logo.png" alt="logo">--%>10KNetwork</h1>
           </a>                    
         </div>
         <div class="collapse navbar-collapse">
@@ -802,7 +802,7 @@
             <p>&copy; 2014 Oxygen Theme.</p>
           </div>
           <div class="col-sm-6">
-            <p class="pull-right">Designed by <a href="http://www.themeum.com/">eMine</a></p>
+            <p class="pull-right">Designed by <a href="http://www.themeum.com/">eHutch</a></p>
           </div>
         </div>
       </div>
